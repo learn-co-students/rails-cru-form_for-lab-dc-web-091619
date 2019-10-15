@@ -1,0 +1,10 @@
+<h1>Song Form</h1>
+<%= form_tag songs_path do %>
+<label> Song Name: </label>
+<%= text_field_tag :"song[name]" %>
+<label> Artist ID: </label>
+<%= number_field_tag :"song[artist_id]" %>
+<label> Genre ID: </label>
+<%= number_field_tag :"song[genre_id]" %>
+<%= submit_tag "Create Song" %>
+<%end%>
