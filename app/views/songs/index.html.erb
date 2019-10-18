@@ -1,0 +1,14 @@
+
+<h1> All of the Songs </h1>
+
+  <% @songs.each do |song| %>
+    <p> <%= song.name %></p>
+  <% end %> <br>
+
+<%# @songs.each do |song| %>
+<!-- <li> <%#= link_to "#{song.name}", song_path(song) %> </li>-->
+<!--<%# end %> <br>-->
+
+
+
+<button> <%= link_to "Create New Song", new_song_path %> </button>

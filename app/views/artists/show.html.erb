@@ -1,0 +1,10 @@
+
+<h1> My Artist </h1>
+  <ul>
+    <li> Name: <%= @artist.name %></li> <br>
+  </ul>
+    <p> Bio: <%= @artist.bio %></p> <br>
+
+<%= link_to "Home", artists_path %> <br>
+<%= link_to "Edit Artist", edit_artist_path(@artist) %> <br>
+<%= link_to "Delete Artist", artist_path(@artist), method: "delete" %>
