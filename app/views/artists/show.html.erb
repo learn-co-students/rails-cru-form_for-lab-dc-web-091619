@@ -1,0 +1,5 @@
+<h1><%= @artist.name %></h1>
+<p><%= @artist.bio %></p>
+
+<button><a href="/artists">Go To All Artists</a></button>
+<button><%= link_to "Edit Form", edit_artist_path(@artist) %></button>
